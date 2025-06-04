@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>XML Differencer</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="icon" href="../static/img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+      style='font-family: Inter, "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- HEADER -->
+        <header class="flex items-center justify-between border-b border-[#f1f2f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#121416]">
+            <img src="../static/img/logo.png" alt="Logo" class="h-6 w-6" />
+            <a href="/">
+              <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex items-center">
+                <span class="text-[#121416]">XML</span>
+                <span class="text-red-600 ml-1">Differencer</span>
+              </h2>
+            </a>
+          </div>
+          <div class="flex flex-1 justify-end gap-8"></div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 class="text-[#121416] text-[28px] font-bold text-center pb-3 pt-5">
+              Paste your XML Files
+            </h2>
+
+            <!-- Side-by-side Textareas -->
+            <div class="flex gap-4 px-4 py-3 flex-wrap justify-center">
+              <!-- Text 1 -->
+              <label class="flex flex-col flex-1 min-w-[300px] max-w-[450px]">
+                <p class="text-[#121416] text-base font-medium pb-2">Text 1</p>
+                <textarea
+                  id="text1"
+                  placeholder="Paste XML content here"
+                  class="form-input w-full resize-none rounded-xl border border-[#dde1e3] bg-white min-h-36 p-4 text-base text-[#121416] placeholder:text-[#6a7681] focus:border-[#dde1e3] focus:outline-0"
+                ></textarea>
+              </label>
+
+              <!-- Text 2 -->
+              <label class="flex flex-col flex-1 min-w-[300px] max-w-[450px]">
+                <p class="text-[#121416] text-base font-medium pb-2">Text 2</p>
+                <textarea
+                  id="text2"
+                  placeholder="Paste XML content here"
+                  class="form-input w-full resize-none rounded-xl border border-[#dde1e3] bg-white min-h-36 p-4 text-base text-[#121416] placeholder:text-[#6a7681] focus:border-[#dde1e3] focus:outline-0"
+                ></textarea>
+              </label>
+            </div>
+
+            <!-- Compare Button -->
+            <div class="flex justify-center px-4 py-3">
+              <button
+                id="compareBtn"
+                class="rounded-full h-10 px-6 bg-[#dce8f3] text-[#121416] text-sm font-bold"
+              >
+                Compare XMLs
+              </button>
+            </div>
+
+            <!-- Differences Table -->
+            <h2 class="text-[#121416] text-[22px] font-bold px-4 pb-3 pt-5">Differences</h2>
+            <div class="px-4 py-3 @container">
+              <div class="overflow-hidden rounded-xl border border-[#dde1e3] bg-white">
+                <table class="w-full" id="diffTable">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="px-4 py-3 text-left text-[#121416] w-1/3 text-sm font-medium">Attribute</th>
+                      <th class="px-4 py-3 text-left text-[#121416] w-1/3 text-sm font-medium">File 1 Value</th>
+                      <th class="px-4 py-3 text-left text-[#121416] w-1/3 text-sm font-medium">File 2 Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Differences will be dynamically inserted here -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="flex justify-center">
+          <div class="max-w-[960px] w-full text-center px-5 py-10">
+            <a href="https://www.instagram.com/_ne.vin05/" target="_blank">
+              <p class="text-[#6a7681] text-base font-normal">Built with Nevin's❤</p>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Add your script here -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
