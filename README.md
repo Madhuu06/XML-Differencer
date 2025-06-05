@@ -2,7 +2,7 @@
 Tired of manually scanning XML files to find what changed?
 XML Difference Checker is your go-to tool for fast, clear, and accurate comparisons. Built for developers, testers, DevOps, and data engineers, it highlights every difference — from missing tags to attribute mismatches — so you can spend less time debugging and more time building.
 
-🚀 Features
+<h2>Features</h2>
 Paste or upload two XML files
 
 Automatically parses and compares both structures
@@ -17,7 +17,7 @@ Structural mismatches
 
 Color-coded, side-by-side view for instant clarity
 
-👤 Who It's For
+<h2>👤 Who It's For</h2>
 Backend developers comparing config or API changes
 
 QA testers validating output vs expected XML
@@ -28,7 +28,7 @@ Data engineers checking schema consistency
 
 Students learning XML structure through practical comparison
 
-💡 Why Use It?
+<h2>💡 Why Use It?</h2>
 ⚡ Instant comparisons, no setup needed
 
 🧠 Designed for clarity and speed
