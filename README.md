@@ -1,47 +1,39 @@
-# XML-Differencer
-XML Difference Checker – Your Go-To Tool for Clear, Instant XML Comparisons
-Tired of digging through two XML files trying to find what changed? XML Difference Checker does the heavy lifting for you. Built specifically for developers, testers, DevOps engineers, and data teams, this tool helps you compare two XML files instantly and spot even the smallest differences in structure, tags, attributes, or values.
+🔍 XML Difference Checker – Instantly Spot Differences in XML Files
+Tired of manually scanning XML files to find what changed?
+XML Difference Checker is your go-to tool for fast, clear, and accurate comparisons. Built for developers, testers, DevOps, and data engineers, it highlights every difference — from missing tags to attribute mismatches — so you can spend less time debugging and more time building.
 
-Whether you’re working on backend systems, cloud configurations, CI/CD pipelines, or data exchange formats, XML is everywhere — and so are subtle, hard-to-catch issues. This tool is designed to eliminate guesswork, reduce debugging time, and ensure consistency across environments.
+🚀 Features
+Paste or upload two XML files
 
-🔧 How It Works
-Paste or upload two XML files.
+Automatically parses and compares both structures
 
-The tool parses both files into structured trees.
+Line-by-line difference detection:
 
-It highlights every difference line-by-line, including:
-
-Added or missing tags
+Missing or extra tags
 
 Changed values or attributes
 
 Structural mismatches
 
-Everything is laid out clearly in a color-coded, side-by-side view — no clutter, no noise.
+Color-coded, side-by-side view for instant clarity
 
-🧑‍💻 Who This Is For
-Backend developers reviewing config or API changes
+👤 Who It's For
+Backend developers comparing config or API changes
 
-QA testers validating test output against expected results
+QA testers validating output vs expected XML
 
-DevOps/SRE teams checking environment or deployment files (*.xml)
+DevOps/SREs reviewing CI/CD or environment files
 
-Data engineers ensuring schema consistency across exports/imports
+Data engineers checking schema consistency
 
-System integrators debugging communication between XML-based systems
+Students learning XML structure through practical comparison
 
-Even students or XML beginners who want to better understand structure changes
+💡 Why Use It?
+⚡ Instant comparisons, no setup needed
 
-💡 Why You’ll Love It
-⚡ Compare two XML files instantly
+🧠 Designed for clarity and speed
 
-🎯 Get clear visual feedback on every difference
+🎯 Helps reduce errors and debugging time
 
-💼 Save hours during reviews and troubleshooting
+✅ Just open, paste, and go
 
-✅ Zero setup — just open, paste, and go
-
-🧠 Designed to help you think less and debug faster
-
-XML is tricky. Your tools shouldn’t be.
-Whether you're maintaining legacy systems or building something new, XML Difference Checker makes sure you're always in sync with your data.
